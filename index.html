@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+
+    <title>Q2 Skills Test</title>
+
+    <style>
+        .container1{
+            background-color: rgb(83, 166, 199);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            text-align: center;
+            width: 900px;
+            
+        }
+
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div class = container1>
+     <h1>Non-Metal Elements Information Checker</h1>
+     <br>
+    <h6>Instructions: Enter the symbol of a non-metal element. (Examples: He, O, Xe)</h6>
+    <br>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-5">
+                <form>
+                    <label for ="nonmetals">Enter a non-metal element</label>
+                    <br>
+                    <input type="text" id="nonmetals" class="form-control"><br>
+                    <button type="button" class="btn btn-warning" py-click="period">Show</button>
+                    <br>
+                    <h6>Results:</h6>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="output1"></div>
+    <script type="py" src="main.py"></script>
+    </div>
+</body>
+</html>
